@@ -1,8 +1,9 @@
 #-------------------------------PROVIDER-------------------------------
+#see MySecretsLocal.txt for access_key and secret_key
 provider "aws" {
   region     = "eu-west-3"
-  access_key = "AKIAQMPOQK7W36R3IXFY"
-  secret_key = "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"
+  access_key = ""
+  secret_key = ""
 }
 
 # provider "linode" {
