@@ -1,0 +1,21 @@
+.terraform
+this folder contains information about providers that are installed locally.
+we put this in .gitignore
+
+terraform.tfstate
+terraform.tfstate - is a current state in real-world infrastructure
+refresh during terraform apply,  updates the terraform.tfstate file with real-world infrastructure
+
+
+terraform.tfstate.backup
+terraform.tfstate.backup - is a previous state in real-world infrastructure
+
+variable
+terraform apply -var "subnet_cidr_block=10.0.10.0/24" #apply configuration with variable set in cmd
+terraform apply -var-file terraform-dev.tfvars #apply configuration with variables
+
+Environment variables
+export AWS_ACCESS_KEY_ID=AKIAQMPOQK7W36R3IXFY
+export AWS_SECRET_ACCESS_KEY=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
+#after that we may not provide this variables in provider
+terraform apply -var-file terraform-dev.tfvars
